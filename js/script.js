@@ -4,9 +4,8 @@ $(document).ready(function() {
 	var selectOptions = $('#options')
 	var inputOption = $('#search-music')
 	var results = $('#results')
-	var button = $('#submit-button')
-	var searchInput;
 
+	var searchInput;
 	var searchResults;
 
 	selectOptions.on('change', getSearchType);
@@ -19,7 +18,7 @@ $(document).ready(function() {
 
 
 	function getSearchType(e) {
-$('#results').html(' ')
+  	$('#results').html(' ')
 
 		var searchType = $(this).val();
 		console.log(searchType);
